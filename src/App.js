@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from "./components/Header"
 import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
+import TaskDetails from './components/TaskDetails'
 import Footer from './components/Footer'
 import About from './components/About'
 
@@ -103,6 +104,7 @@ function App() {
               </>
             } />
           <Route path='/about' element={<About/>} />
+          <Route path='/task/:id' element={<TaskDetails/>} />
         </Routes>
         <Footer />
       </div>
